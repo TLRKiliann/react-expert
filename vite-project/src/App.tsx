@@ -12,19 +12,32 @@ type PropsPerson = {
 const App:React.FC = () => {
 
   const [ btn, setBtn ] = useState<string>("");
-  //console.log(btn, "my btn");
-  
+
+  const [change, setChange] = useState<string>("");
+
   const [ valueToRetrieve, setValueToRetrieve ] = useState<PropsPerson>({
     firstName: "Johnnas",
     age: 44,
     admin: true
   });
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>, name: string): void => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>): void => {
     event.preventDefault();
     console.log("clicked !", event.currentTarget);
-    setBtn(event.target.name);
-  }
+    setBtn(event.currentTarget.name);
+  };
+
+  const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    setChange(event.target.value);
+  };
+
+  const handleValidate = () => {
+    setValueToRetrieve({ 
+      firstName : change, 
+      age: valueToRetrieve.age, 
+      admin: valueToRetrieve.admin 
+    });
+  };
 
   return (
     <>
@@ -32,9 +45,16 @@ const App:React.FC = () => {
       
       <Task />
 
-      <InputTask valueToRetrieve={valueToRetrieve} />
+      <InputTask 
+        valueToRetrieve={valueToRetrieve} 
+        change={change} 
+        handleChangeInput={handleChangeInput}
+        handleValidate={handleValidate} 
+      />
 
-      <button type="button" name="button-one" onClick={handleClick}>Click</button>
+      <button type="button" name="button-one" onClick={handleClick}>
+        Click
+      </button>
       {btn ? (
         <p>Name of button : {btn}</p> 
         ):(
