@@ -1,0 +1,71 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly App 1`] = `
+[
+  <h1>
+    Hello React
+  </h1>,
+  <h1>
+    Hello Task
+  </h1>,
+  <h1>
+    Hello InputTask
+  </h1>,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  >
+    Johnnas
+  </h2>,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  >
+    44
+  </h2>,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  >
+    Yes admin
+  </h2>,
+  <label>
+    Change firstname :
+  </label>,
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />,
+  <p>
+    Not changed
+  </p>,
+  <button
+    data-testid="btntestvalidate"
+    onClick={[Function]}
+    type="button"
+  >
+    Validate
+  </button>,
+  <button
+    data-testid="btntest"
+    name="button-one"
+    onClick={[Function]}
+    type="button"
+  >
+    Click
+  </button>,
+  <p>
+    Press btn
+  </p>,
+]
+`;

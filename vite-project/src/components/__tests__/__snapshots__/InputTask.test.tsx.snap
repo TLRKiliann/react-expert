@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly InputTask 1`] = `
+[
+  <h1>
+    Hello InputTask
+  </h1>,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  />,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  />,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  >
+    not admin
+  </h2>,
+  <label>
+    Change firstname :
+  </label>,
+  <input
+    type="text"
+  />,
+  <p>
+    Not changed
+  </p>,
+  <button
+    data-testid="btntestvalidate"
+    type="button"
+  >
+    Validate
+  </button>,
+]
+`;

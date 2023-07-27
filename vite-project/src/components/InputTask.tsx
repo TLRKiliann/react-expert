@@ -17,15 +17,15 @@ const InputTask = (props: PropsValue): JSX.Element => {
 			<h1>Hello InputTask</h1>
 
 			<h2 style={{color: "deepskyblue"}}>
-				{props.valueToRetrieve.firstName}
+				{props.valueToRetrieve?.firstName}
 			</h2>
 
 			<h2 style={{color: "deepskyblue"}}>
-				{props.valueToRetrieve.age}
+				{props.valueToRetrieve?.age}
 			</h2>
 			
 			<h2 style={{color: "deepskyblue"}}>
-				{props.valueToRetrieve.admin ? `Yes admin` : `not admin`}
+				{props.valueToRetrieve?.admin ? `Yes admin` : `not admin`}
 			</h2>
 
 			<label>Change firstname :</label>
@@ -37,7 +37,7 @@ const InputTask = (props: PropsValue): JSX.Element => {
 			
 			{ props.change ? <p>{props.change}</p> : <p>Not changed</p> }
 
-			<button type="button" onClick={props.handleValidate}>
+			<button data-testid="btntestvalidate" type="button" onClick={props.handleValidate}>
 				Validate
 			</button>
 		</>

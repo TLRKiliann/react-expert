@@ -52,7 +52,7 @@ const App:React.FC = () => {
         handleValidate={handleValidate} 
       />
 
-      <button type="button" name="button-one" onClick={handleClick}>
+      <button data-testid="btntest" type="button" name="button-one" onClick={handleClick}>
         Click
       </button>
       {btn ? (
