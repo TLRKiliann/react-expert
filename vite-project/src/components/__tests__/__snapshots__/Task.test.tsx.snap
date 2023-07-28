@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly Task 1`] = `
+<h1>
+  Hello Task
+</h1>
+`;
