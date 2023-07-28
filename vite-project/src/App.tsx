@@ -41,7 +41,7 @@ const App:React.FC = () => {
     <>
       <h1>Hello React</h1>
       
-      <Task />
+      <Task valueToRetrieve={valueToRetrieve} />
 
       <InputTask 
         valueToRetrieve={valueToRetrieve} 
@@ -50,7 +50,12 @@ const App:React.FC = () => {
         handleValidate={handleValidate} 
       />
 
-      <button data-testid="btntest" type="button" name="button-one" onClick={handleClick}>
+      <button 
+        data-testid="btntest" 
+        type="button" 
+        name="button-one" 
+        onClick={handleClick}
+      >
         Click
       </button>
       {btn ? (

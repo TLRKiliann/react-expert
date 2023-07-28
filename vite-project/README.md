@@ -8,15 +8,23 @@
 
 - A simple exercise to review typescript and a practical execution to test RTL and jsdom.
 
-## Install
+## Basic Installation from scratch
 
 $ pnpm create vite
 
-options :
+Options :
 
 > React
 
 > TypeScript
+
+## Run
+
+$ cd vite-project
+
+$ pnpm install
+
+$ pnpm run dev
 
 ## Configuration for testing
 

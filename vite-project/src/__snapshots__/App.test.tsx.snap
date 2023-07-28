@@ -8,6 +8,15 @@ exports[`renders correctly App 1`] = `
   <h1>
     Hello Task
   </h1>,
+  <h2
+    style={
+      {
+        "color": "deepskyblue",
+      }
+    }
+  >
+    Johnnas
+  </h2>,
   <h1>
     Hello InputTask
   </h1>,
