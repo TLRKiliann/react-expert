@@ -38,10 +38,14 @@ exports[`renders correctly App 1`] = `
   >
     Yes admin
   </h2>,
-  <label>
+  <label
+    htmlFor="name"
+  >
     Change firstname :
   </label>,
   <input
+    data-testid="firstname"
+    id="name"
     onChange={[Function]}
     type="text"
     value=""

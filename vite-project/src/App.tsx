@@ -12,9 +12,7 @@ type PropsPerson = {
 const App:React.FC = () => {
 
   const [ btn, setBtn ] = useState<string>("");
-
   const [change, setChange] = useState<string>("");
-
   const [ valueToRetrieve, setValueToRetrieve ] = useState<PropsPerson>({
     firstName: "Johnnas",
     age: 44,
