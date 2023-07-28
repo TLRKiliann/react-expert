@@ -28,8 +28,10 @@ const InputTask = (props: PropsValue): JSX.Element => {
 				{props.valueToRetrieve?.admin ? `Yes admin` : `not admin`}
 			</h2>
 
-			<label>Change firstname :</label>
+			<label htmlFor="name">Change firstname :</label>
 			<input 
+				data-testid="firstname"
+				id="name"
 				type="text"
 				value={props.change} 
 				onChange={props.handleChangeInput}

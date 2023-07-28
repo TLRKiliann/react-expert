@@ -12,9 +12,7 @@ type PropsPerson = {
 const App:React.FC = () => {
 
   const [ btn, setBtn ] = useState<string>("");
-
   const [change, setChange] = useState<string>("");
-
   const [ valueToRetrieve, setValueToRetrieve ] = useState<PropsPerson>({
     firstName: "Johnnas",
     age: 44,
@@ -43,7 +41,7 @@ const App:React.FC = () => {
     <>
       <h1>Hello React</h1>
       
-      <Task />
+      <Task valueToRetrieve={valueToRetrieve} />
 
       <InputTask 
         valueToRetrieve={valueToRetrieve} 
@@ -52,7 +50,12 @@ const App:React.FC = () => {
         handleValidate={handleValidate} 
       />
 
-      <button data-testid="btntest" type="button" name="button-one" onClick={handleClick}>
+      <button 
+        data-testid="btntest" 
+        type="button" 
+        name="button-one" 
+        onClick={handleClick}
+      >
         Click
       </button>
       {btn ? (

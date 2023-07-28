@@ -28,10 +28,14 @@ exports[`renders correctly InputTask 1`] = `
   >
     not admin
   </h2>,
-  <label>
+  <label
+    htmlFor="name"
+  >
     Change firstname :
   </label>,
   <input
+    data-testid="firstname"
+    id="name"
     type="text"
   />,
   <p>
